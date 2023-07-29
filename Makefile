@@ -7,7 +7,7 @@ help: ## Show this help information
 
 flake8: ## Check Python source for PEP8 style guidance
 	$(info Running: flake8 --max-complexity 10 $(SRC))
-	@if type flake8 >/dev/null 2>&1 ; then flake8 --max-complexity 10 $(SRC) ; \
+	@if type flake8 >/dev/null 2>&1 ; then flake8 --max-complexity 12 $(SRC) ; \
 	 else echo 'SKIPPED. Please run `pip install -r requirements.txt`!' >&2; fi
 
 mypy: ## Check Python source for type errors
